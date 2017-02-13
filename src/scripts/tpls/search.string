@@ -1,0 +1,24 @@
+ <div class="s-home">
+   <header>
+      <span class="yo-ico">
+        &#xe790;
+      </span>
+      <h3>发现</h3>
+  </header>
+  <div class="s-div">
+    <input type="text" placeholder="请输入昵称">
+    <button id ="cancel">取消</button>
+  </div>
+  <div class="s-list">
+      <dl ng-repeat="item in data">
+            <dt><img ng-src="{{item.img}}"></dt>
+            <dd class="findlist-content">
+                <h4>{{item.title}}</h4>
+                <p>{{item.content}}</p>
+            </dd>
+            <dd class="findlist-attention">
+                <button ng-class="{attention:item.attention}" data-flag="{{item.attention}}">{{item.attention? "已关注":"关注" }}</button>
+            </dd>
+        </dl>
+  </div>
+ </div>

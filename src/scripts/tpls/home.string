@@ -1,0 +1,53 @@
+<div class="m-home">
+  <header>
+      <span class="yo-ico">
+        &#xe790;
+      </span>
+      <nav>
+        <ul id="title">
+          <li class="active">热点</li>
+          <li>关注</li>
+        </ul>
+      </nav>
+      <span class="yo-ico">
+        &#xe7ad;
+      </span>
+  </header>
+  <section>
+      <div class="swiper-container" id="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="index_top">
+                <ul id="nav">
+                  <li class="border">足球生活</li>
+                  <li>足球现场</li>
+                  <li>足球美女</li>
+                </ul>
+            </div>  
+            <div class="swiper-container" id="swiper-main">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide" id="scroll">
+                  
+                  <div class="content_list">
+                    <div>
+                      <div id="uprefresh" class="uprefresh">上拉刷新</div>
+                      <dl ng-repeat="item in data">
+                        <dt><img ng-src={{item.img}} alt=""></dt>
+                        <dd>{{item.title}}</dd>
+                      </dl>
+                    </div>
+                    <div id="downrefresh" class="downrefresh">下拉加载</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">足球现场</div>
+                <div class="swiper-slide">足球美女</div>
+              </div> 
+            </div>
+          </div>
+          <div class="swiper-slide">热点</div>
+        </div>
+      </div>
+  </section>
+    
+</div>

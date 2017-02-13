@@ -1,0 +1,36 @@
+ <div class="s-home">
+   <header>
+      <span class="yo-ico">
+        &#xe790;
+      </span>
+      <h3>个人中心</h3>
+  </header>
+  <section class="my-content">
+  	 <div class="my-head">
+        <dl>
+            <dt><img src="../images/Pikachu.jpg" alt=""></dt>
+            <dd>
+                <h4>我是小萌</h4>
+                <p>我是小萌我怕谁</p>
+            </dd>
+        </dl>
+    </div>
+    <div class="my-swipper">
+        <div>
+    	     <ul id="nav">
+                <li class="active" >图片（1）</a>
+                <li>关注（1）</a>
+                <li>粉丝（1）</a>
+            </ul>
+        </div>
+        <div class="swiper-container mine-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../images/img1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../images/img2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../images/img3.jpg" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+  </section>
+ </div>

@@ -1,0 +1,11 @@
+require("./libs/swiper-3.3.1.min");
+require("./libs/angular1.3.8.min.js");
+require("./libs/angular-ui-router.js");
+require("./libs/zepto.min.js")
+require("./views/config");
+require("./views/server");
+require("./views/controller");
+require("./views/index");
+require("./views/guide");
+require("./views/search");
+require("./views/my");

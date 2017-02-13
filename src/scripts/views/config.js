@@ -1,0 +1,33 @@
+angular.module("myapp",["ui.router"])
+    .config(["$stateProvider","$urlRouterProvider", function ($stateProvider,$urlRouterProvider) {
+        $urlRouterProvider.otherwise("/guide")
+        $stateProvider 
+            .state("guide",{
+                url:"/guide",
+                templateUrl:"./src/scripts/tpls/guide.string",
+                controller:"guideCtrl"
+            })
+            .state("home",{
+                 url:"/home",                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+                 templateUrl:"./src/scripts/tpls/index.string"
+            })
+             .state("home.index",{
+                 url:"/index",
+                 templateUrl:"./src/scripts/tpls/home.string",
+                 controller:"indexCtrl" 
+              })
+            .state("home.search",{
+                 url:"/search",
+                 templateUrl:"./src/scripts/tpls/search.string",
+                 controller:"searchCtrl"
+            })
+             .state("home.exit",{
+                 url:"/exit",
+                 templateUrl:"./src/scripts/tpls/exit.string"
+            })
+            .state("home.my",{
+                 url:"/my",
+                 templateUrl:"./src/scripts/tpls/my.string",
+                 controller:"myCtrl"
+            })
+    }])
